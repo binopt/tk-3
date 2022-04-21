@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Level1 {
     static String[] answers = {
@@ -32,7 +31,6 @@ public class Level1 {
         int score = 0;
         int count = 0;
         ArrayList<String> typedWords = new ArrayList<String>(); 
-        Scanner input = new Scanner(System.in);
 
         System.out.println("Level 1");
         System.out.println("--------");
@@ -40,13 +38,23 @@ public class Level1 {
 
         for (int i = 1; i <= 10;) {
             System.out.print(i +  "> Your Answer : ");
-            String answer = input.next();
+            String answer = CoepoePuzzle.input.next();
 
+            // check if the answer length is less than 3 or greater than 6
+            if (answer.length() < 3 || answer.length() > 6) {
+                System.out.println("Your answer must be 3-6 characters long.");
+                continue;
+            }
+
+            // check if the answer is inside the answers array
             if (Arrays.stream(answers).anyMatch(answer::contains)) {
+
+                // check if the answer is already typed
                 if (typedWords.contains(answer)) {
                     System.out.println("You had already type this word before!");
                     continue;
                 }
+
                 score += 10;
                 typedWords.add(answer);
                 System.out.println("#Right. Score : " + score);

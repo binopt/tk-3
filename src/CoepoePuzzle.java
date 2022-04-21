@@ -4,13 +4,15 @@ import java.util.Scanner;
  * CoepoePuzzle
  */
 public class CoepoePuzzle {
+    static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         Level1 level1 = new Level1();
 
         while(true) {
             showRules();
+
+            // level 1
             int scoreLevel1 = level1.playLevel1();
             if (!checkScore(scoreLevel1)) {
                 String answer = input.next();
