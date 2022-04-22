@@ -8,6 +8,8 @@ public class CoepoePuzzle {
 
     public static void main(String[] args) {
         Level1 level1 = new Level1();
+        Level2 level2 = new Level2();
+        Level3 level3 = new Level3();
 
         while(true) {
             showRules();
@@ -23,7 +25,27 @@ public class CoepoePuzzle {
                 }
             }
 
-            System.out.println("\nLevel 2");
+            // level 2
+            int scoreLevel2 = level2.playLevel2();
+            if (!checkScore(scoreLevel2)) {
+                String answer = input.next();
+                if (checkPlayAgain(answer)) {
+                    continue;
+                } else {
+                    break;
+                }
+            }
+
+            // level 3
+            int scoreLevel3 = level3.playLevel3();
+            if (!checkScore(scoreLevel3)) {
+                String answer = input.next();
+                if (checkPlayAgain(answer)) {
+                    continue;
+                } else {
+                    break;
+                }
+            }
         }
 
         input.close();

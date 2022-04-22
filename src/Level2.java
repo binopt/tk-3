@@ -1,40 +1,51 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Level1 {
+public class Level2 {
     static String[] answers = {
-        "die",
-        "led",
-        "lei",
-        "let",
-        "lid",
-        "lie",
-        "lit",
-        "tie",
-        "deli",
-        "diet",
-        "edit",
-        "idle",
-        "lied",
-        "tide",
-        "tied",
-        "tile",
-        "tilt",
-        "tilde",
-        "tiled",
-        "title",
-        "tilted",
-        "titled",
+        "seance",
+        "seneca",
+        "encase",
+        "canes",
+        "cense",
+        "cease",
+        "scene",
+        "scena",
+        "acnes",
+        "ease",
+        "cees",
+        "sane",
+        "cane",
+        "case",
+        "cans",
+        "acne",
+        "scan",
+        "sene",
+        "anes",
+        "seen",
+        "ace",
+        "sea",
+            "sen",
+            "sec",
+            "see",
+            "sae",
+            "sac",
+            "nee",
+            "ane",
+            "can",
+            "cee",
+            "ens",
+            "nae"
     };
 
-    public int playLevel1() {
+    public int playLevel2() {
         int score = 0;
         int count = 0;
         ArrayList<String> typedWords = new ArrayList<String>(); 
 
-        System.out.println("Level 1");
+        System.out.println("\nLevel 2");
         System.out.println("--------");
-        System.out.println("     d     e     t     t     l     i     ");
+        System.out.println("     s     e     c     a     e     n     ");
 
         for (int i = 1; i <= 10;) {
             System.out.print(i +  "> Your Answer : ");
