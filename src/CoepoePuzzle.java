@@ -46,6 +46,14 @@ public class CoepoePuzzle {
                     break;
                 }
             }
+
+            System.out.print("\n\nOverall score : " + scoreLevel1 + scoreLevel2 + scoreLevel3);
+            System.out.println("\nYou Win !!");
+            System.out.println("Press ENTER to exit..");
+            String exit = input.nextLine();
+            if (exit.equals("")) {
+                break;
+            }
         }
 
         input.close();
@@ -65,7 +73,7 @@ public class CoepoePuzzle {
 
     private static boolean checkScore(int score) {
         if (score < 70) {
-            System.out.println("You Lose!! Try Again..");
+            System.out.println("\nYou Lose!! Try Again..");
             System.out.print("Do you want to play again? (Y/T) : ");
             return false;
         }
