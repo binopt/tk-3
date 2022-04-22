@@ -47,7 +47,7 @@ public class CoepoePuzzle {
                 }
             }
 
-            System.out.print("\n\nOverall score : " + scoreLevel1 + scoreLevel2 + scoreLevel3);
+            System.out.print("\n\nOverall score : " + (scoreLevel1 + scoreLevel2 + scoreLevel3));
             System.out.println("\nYou Win !!");
             System.out.println("Press ENTER to exit..");
             String exit = input.nextLine();

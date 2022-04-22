@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="afccc4c6-ca14-457b-b1ec-24dd5357cb70" name="Changes" comment="Add level 2 and 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tk-3/CoepoePuzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tk-3/CoepoePuzzle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoepoePuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoepoePuzzle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
